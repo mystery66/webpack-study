@@ -11,4 +11,4 @@ img.classList.add("avatar")
 img.src = image;
 ele.append(img);
 // new Header();
-console.log(1232);
+console.log(1232, 26757);

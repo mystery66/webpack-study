@@ -4,6 +4,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.js', // 打包的文件
+  devtool: 'source-map', // sourceMap 映射源文件
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    open: true,
+    port: 8080
+  },
   module: {
     rules: [{
       test: /\.(jpg|png|gif)$/,
